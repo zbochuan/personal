@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec} % for controlling section titles
+\usepackage{graphicx} % for images
+\usepackage{fontspec} % for using system fonts
+
+% Margins: 20 mm
+\geometry{a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm}
+
+% Line spacing: 1.5
+\onehalfspacing
+
+% Font settings (Times New Roman)
+\setmainfont{Times New Roman}
+
+% Multi-level headings control
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% No underlining - use bold instead
+% Add the following text structure
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{4cm}
+    {\Large EG1000 Engineering Design and Innovation \par}
+    \vspace{1.5cm}
+    {\Huge Project MPRC \par}
+    \vspace{1cm}
+    {\Large Design Proposal for Team XX \par}
+    \vfill
+    {\large Submitted: 17 October 2023 \par}
+    \vspace{2cm}
+    \begin{tabbing}
+        \textbf{Belushi, John} \hspace{1cm} \= \texttt{z1110001} \hspace{1cm} \= \texttt{z1110003@student.unsw.edu.au} \\
+        \textbf{Cagney, Jimmy} \> \texttt{z1110002} \> \texttt{z1110004@student.unsw.edu.au} \\
+        \textbf{Good, Johnny B.} \> \texttt{z1110003} \> \texttt{z1110005@student.unsw.edu.au} \\
+        \textbf{Mercury, Freddy} \> \texttt{z1110004} \> \texttt{z1110006@student.unsw.edu.au} \\
+        \textbf{Richard, Little} \> \texttt{z1110005} \> \texttt{z1110007@student.unsw.edu.au} \\
+        \textbf{Thornton, Wm. R.} \> \texttt{z1110006} \> \texttt{z1110008@student.unsw.edu.au} \\
+    \end{tabbing}
+    \vfill
+\end{titlepage}
+
+\newpage
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+% Main Body
+\section{Introduction}
+This section introduces the problem statement and outlines the objectives of the project. The design proposal focuses on the MPRC project, where we aim to deliver an optimized solution considering the constraints.
+
+\section{Design Concepts}
+\subsection{The First Design Concept Considered}
+We considered a variety of design concepts for the MPRC. The first design is inspired by the simplicity of existing engineering solutions and is detailed in this section.
+
+\subsection{The Second Design Concept Considered}
+The second concept, as shown in Figure~\ref{fig:concept2}, addresses several challenges by focusing on a modular approach.
+
+\subsubsection{Key Advantages of the Second Design}
+This subsection highlights the main advantages of this design and the reasoning behind choosing this concept.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{concept2.jpg}
+    \caption{Second design concept illustration.}
+    \label{fig:concept2}
+\end{figure}
+
+\section{Conclusion}
+In conclusion, we presented two design concepts and outlined the rationale for selecting the second option as the most promising.
+
+\end{document}
+
+
+
