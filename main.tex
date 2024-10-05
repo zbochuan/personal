@@ -5,16 +5,12 @@
 \usepackage{setspace}
 \usepackage{titlesec} % for controlling section titles
 \usepackage{graphicx} % for images
-\usepackage{fontspec} % for using system fonts
-
+\usepackage{fontspec} % 使用fontspec包
 % Margins: 20 mm
 \geometry{a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm}
-
+\setmainfont{Times New Roman}
 % Line spacing: 1.5
 \onehalfspacing
-
-% Font settings (Times New Roman)
-\setmainfont{Times New Roman}
 
 % Multi-level headings control
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
@@ -25,32 +21,40 @@
 % Add the following text structure
 
 \begin{document}
-
-% Title Page
 \begin{titlepage}
     \centering
-    \vspace*{4cm}
-    {\Large EG1000 Engineering Design and Innovation \par}
-    \vspace{1.5cm}
-    {\Huge Project MPRC \par}
-    \vspace{1cm}
-    {\Large Design Proposal for Team XX \par}
+    % Reduce the vertical space above the title
+    \vspace{1cm}  % Adjust this value to control spacing between the title and subtitle
+    {\Large \textbf{EG1000} \par}
+    \vspace{0.5cm}  % Adjust this value to move the title upwards
+    {\Large  \textbf{Engineering Design and Innovation} \par}
+    \vspace{4cm}  % Adjust this to control spacing between title and subtitle
+    {\Huge \textbf{Project MPRC} \par}
+    \vspace{0.8cm}
+    {\Large \textbf{Design Proposal for Team 16} \par}
     \vfill
-    {\large Submitted: 17 October 2023 \par}
-    \vspace{2cm}
+    {\large \textit{Submitted: 17 October 2023} \par}
+    \vspace{1cm}  % Reduce the space before the author list
+    % Use extra spacing between authors
+
     \begin{tabbing}
-        \textbf{Belushi, John} \hspace{1cm} \= \texttt{z1110001} \hspace{1cm} \= \texttt{z1110003@student.unsw.edu.au} \\
-        \textbf{Cagney, Jimmy} \> \texttt{z1110002} \> \texttt{z1110004@student.unsw.edu.au} \\
-        \textbf{Good, Johnny B.} \> \texttt{z1110003} \> \texttt{z1110005@student.unsw.edu.au} \\
-        \textbf{Mercury, Freddy} \> \texttt{z1110004} \> \texttt{z1110006@student.unsw.edu.au} \\
-        \textbf{Richard, Little} \> \texttt{z1110005} \> \texttt{z1110007@student.unsw.edu.au} \\
-        \textbf{Thornton, Wm. R.} \> \texttt{z1110006} \> \texttt{z1110008@student.unsw.edu.au} \\
+        Bochuan Zhang \hspace{2cm} \= \texttt{z5512751} \hspace{2cm} \= \texttt{z5512751@student.unsw.edu.au} \\[10pt]
+        Chengrui Jiang\> \texttt{z5531661} \> \texttt{z5531661@student.unsw.edu.au} \\[10pt]
+        Chi-En Peng \> \texttt{z5501778} \> \texttt{z5501778@student.unsw.edu.au} \\[10pt]
+        Shenglin Wang \> \texttt{z5531249} \> \texttt{z5531249@student.unsw.edu.au} \\[10pt]
+        Weijia Xiao \> \texttt{z5533442} \> \texttt{z5533442@student.unsw.edu.au} \\[10pt]
+        Yaran Zhang \> \texttt{z5530426} \> \texttt{z5530426@student.unsw.edu.au} \\[10pt]
+        Yixuan Hu \> \texttt{z5529585} \> \texttt{z5529585@student.unsw.edu.au} \\[10pt]
+        Yung-Ching Liang \> \texttt{z5426463} \> \texttt{z5426463@student.unsw.edu.au} \\[10pt]
     \end{tabbing}
     \vfill
+
 \end{titlepage}
 
-\newpage
-
+\section*{Abstract}
+This document presents the design proposal for Team 16, focusing on the SunRay Speedway. 
+The proposal outlines two design concepts and provides a detailed analysis of the advantages and disadvantages of each. 
+The document concludes with a recommendation for the most promising design concept based on the evaluation criteria.
 % Table of Contents
 \tableofcontents
 \newpage
@@ -71,7 +75,6 @@ This subsection highlights the main advantages of this design and the reasoning 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.5\textwidth]{concept2.jpg}
     \caption{Second design concept illustration.}
     \label{fig:concept2}
 \end{figure}
