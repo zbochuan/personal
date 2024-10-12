@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex main"] 1728734933.75728 "main.aux" "main.bbl" "main" 1728734935.65847 0
-  "./main-blx.bib" 1728734934.97944 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+["bibtex main"] 1728734933.75728 "main.aux" "main.bbl" "main" 1728735072.28398 0
+  "./main-blx.bib" 1728735071.50845 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "./references.bib" 1728730359.78726 1041 8afe821b2e03880ba35245d227477a56 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "main.aux" 1728734934.97793 2982 d11ab1d023d90c4922a0346c87c675dd "xelatex"
+  "main.aux" 1728735071.50674 2982 d11ab1d023d90c4922a0346c87c675dd "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1728734935.30245 "main.xdv" "main.pdf" "main" 1728734935.65987 0
-  "main.xdv" 1728734934.98015 104428 7cd37ecadf0a1233227a2145e967b78c "xelatex"
+["xdvipdfmx"] 1728735071.90509 "main.xdv" "main.pdf" "main" 1728735072.28589 0
+  "main.xdv" 1728735071.50925 104428 b34789d2a805c481599e30c1916d72ff "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1728734933.84896 "/Users/cheong/1071/main.tex" "main.xdv" "main" 1728734935.65856 0
-  "/Users/cheong/1071/main.tex" 1728734932.15373 10803 81937a494e4dde11387d916681282516 ""
+["xelatex"] 1728735070.13223 "/Users/cheong/1071/main.tex" "main.xdv" "main" 1728735072.28413 0
+  "/Users/cheong/1071/main.tex" 1728735069.99956 10551 065e1eab825af6ae15ed236f82d39cf6 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -176,12 +176,12 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "figure/Picture1.png" 1728724174.76614 131529 882a530e8eb54f766947dafed58b31c7 ""
   "figure/car_prototype.jpg" 1728728277.23141 76108 3fce8c29d5c6370e6286c1b319585f77 ""
-  "main.aux" 1728734934.97793 2982 d11ab1d023d90c4922a0346c87c675dd "xelatex"
-  "main.bbl" 1728734933.84603 3212 0d3688b5a765aa7abfa794b5b3882f47 "bibtex main"
-  "main.out" 1728734934.97856 1952 72e2c0fd36b9337084a54930ed3d38b7 "xelatex"
-  "main.run.xml" 1728734934.98003 2557 6876519dd068d01ced80593cf9987278 "xelatex"
-  "main.tex" 1728734932.15373 10803 81937a494e4dde11387d916681282516 ""
-  "main.toc" 1728734934.98012 1101 36dd6821926d4976b82dd1d6bb984911 "xelatex"
+  "main.aux" 1728735071.50674 2982 d11ab1d023d90c4922a0346c87c675dd "xelatex"
+  "main.bbl" 1728735070.06016 3212 0d3688b5a765aa7abfa794b5b3882f47 "bibtex main"
+  "main.out" 1728735071.50754 1952 72e2c0fd36b9337084a54930ed3d38b7 "xelatex"
+  "main.run.xml" 1728735071.50911 2557 6876519dd068d01ced80593cf9987278 "xelatex"
+  "main.tex" 1728735069.99956 10551 065e1eab825af6ae15ed236f82d39cf6 ""
+  "main.toc" 1728735071.50921 1101 36dd6821926d4976b82dd1d6bb984911 "xelatex"
   (generated)
   "main-blx.bib"
   "main.aux"
