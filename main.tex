@@ -16,7 +16,7 @@
 \usepackage[english]{babel}
 \addbibresource{references.bib} 
 \geometry{a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm}
-\setmainfont{Times New Roman}[Ligatures=TeX]
+\setmainfont{Times New Roman}
 \onehalfspacing
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
@@ -37,7 +37,6 @@
     \vfill
     {\large \textit{Submitted: 17 October 2023} \par}
     \vspace{1cm}
-    
     \begin{tabbing}
         Bochuan Zhang \hspace{2cm} \= \texttt{z5512751} \hspace{2cm} \= \texttt{z5512751@student.unsw.edu.au} \\[10pt]
         Chengrui Jiang\> \texttt{z5531661} \> \texttt{z5531661@student.unsw.edu.au} \\[10pt]
@@ -89,7 +88,7 @@ optimizes instantaneous energy utilization, achieves maximum speed over the shor
 achieves high energy efficiency, and adapts to all kinds of weather. 
 The car requires a range of 10 meters, an efficient energy management system, and fast start and acceleration. 
 % Placeholder for content
-\subsection{Requisite Knowledge}
+\section{Requisite Knowledge}
 To complete the solar car project, in theoretical design part, we need to understand the knowledge of \textbf{capacitors, solar panels and circuits}, 
 including the energy storage and discharge characteristics of capacitors under different load conditions, 
 and design efficient circuits to achieve optimal energy transfer. In practical design part, we need to obtain the knowledge of \textbf{CAD, Laser cutting, and 3D printing}. 
@@ -103,7 +102,8 @@ We have a basic understanding of these technologies, and we will have some furth
 
 \section{Conceptual Design}
 \subsection{System Overview}
-    
+We explored various solutions to achieve our project goal, 
+guided by the parameters outlined in the problem formulation: "PARAMETER 1", "PARAMETER 2", and "PARAMETER 3." 
 \section{Design Evaluation}
 % Placeholder for content
 
@@ -144,12 +144,11 @@ Here is the Gantt Chart of our project planning to help you understand our proje
 \subsection{Previous Work}
 In the first six weeks, we completed three theoretical parts: Team Building, Problem Statement, and Concept Generation. In Week 1, team members got to know each other and held the first group meeting, where everyone presented their understanding of the problem statement. In Week 3, the problem statement facilitated more productive group discussions, as the outcomes were more comprehensive and feasible than individual solutions. By Week 5, the team delivered a presentation on concept generation, exploring various materials, power sources, and transmission methods to optimize performance by balancing efficiency, cost, and weight.
 \subsection{prototype modeling}
-Using a well-equipped car for simple tests was impractical, so we started with temporary substitutes. The body and bottom plate were made of cardboard, with a motor, solar panels, and wheels installed. While the car ran successfully, its speed was unsatisfactory. Additional materials were acquired, and further testing led to design optimizations to reduce weight and improve speed.
-\begin{figure}[h] 
-    \centering 
-    \includegraphics[width=1\textwidth]{figure/car_prototype.jpg}
-    \caption{Tested Car prototype}
-\end{figure}
+Using a well-equipped car for simple tests was impractical, so we started with temporary substitutes. 
+As shown in figure  ~\ref{pic:prototype_car}, the body and bottom plate were made of cardboard, with a motor, solar panels, and wheels installed. 
+The car ran successfully, but its speed was unsatisfactory. 
+Additional materials were acquired, and further testing will aim to reduce weight and improve speed.
+
 \subsection{Project installation}
 \label{sec:installation}
 To install the car, we have decided the components that may be used in our solar panel car.
@@ -166,11 +165,27 @@ We will also test and adjust the gear ratio to maximize speed. Additionally, the
 In the final test, we aim to have a high speed within competitors. Under the full support of previous test and optimization, we believe our car will have a high speed.
 \subsection{Risk Management}
 The main risk are \textbf{shortage of makerspace resource(equipment and material), unexpected installation detail and weather condition during optimization}, which could delay the project.
+\\
+\\
 To mitigate the first two risks, we will have a buffer week between the \textit{\hyperref[sec:installation]{Project Installation}} and \textit{\hyperref[sec:Optimization]{Speed and Appearance optimization}}. 
-This week will be used to address the problems and unexpected detail that may occur in the "Project installation" part. Buffer week can also partly address the last risk, which is the weather condition during testing and optimization.
-However,we will also have a back up solution, which is to simulate solar panels using batteries with variable voltage and current during test and optimization period.
+This week will be used to address the problems and unexpected detail that may occur in the "Project installation" part. This buffer week will provide extra time to resolve any unexpected detail that may occur during the installation period.
+It ensures that out team have flexibility to address those issues without delaying the whole project.
+\\
+\\
+Futhermore, the buffer week can also partially mitigate the risk caused by poor weather conditions during the testing and optimization phase. 
+If we encounter days with poor weather that limit outdoor testing with solar panels, 
+this extra time will allow us to shift tests around.
+\\
+\\
+In addition to the buffer week, we will have a \textbf{backup plan} to reduce the impact of adverse weather. Specifically, during the testing and optimization period, 
+we will simulate solar panel using batteries with adjustable voltage and current                                           . 
+This approach will allow us to continue our optimization efforts without delay, 
+even if real-time solar energy tests are limited by poor weather. 
+This backup plan ensures that our progress remains steady and the project stays on track regardless of external environmental factors.
 
 \subsection{Budget}
+This is our current budget breakdown for the project, which includes the cost of almost all parts and materials needed to build the solar-powered car.
+
 \begin{table}[h] 
 \centering 
 \begin{tabularx}{\textwidth}{Xrr}
@@ -199,12 +214,29 @@ Other - Double sided tape, glue, bolts and washers & 1.0 & 4.00 \\
 Total & 45.0 & 52.70 \\
 \bottomrule
 \end{tabularx}
-\caption{Budget Breakdown for Parts}  % Add your caption here
+\caption{Budget Breakdown for Parts}
 \end{table}
 \section{Summary and Conclusion}
-
+fhdsajfhaksf
+fhdjskahfjsakdf
+\\
+fdjsklfasdkhfjlf
+fhdsjkaflsf\\
+\newpage
+\addcontentsline{toc}{section}{References}
 \printbibliography
 
+\newpage
+\appendix
+\section{Appendix}
+This appendix contains supplementary materials such as detailed calculations, additional diagrams, or extended descriptions related to the project.
+
+\begin{figure}[h] 
+    \centering 
+    \includegraphics[width=0.8\textwidth]{figure/car_prototype.jpg} 
+    \caption{Additional Diagram for the Project}
+    \label{pic:prototype_car}
+\end{figure}
 \end{document}
 
 
