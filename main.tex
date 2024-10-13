@@ -10,10 +10,13 @@
 \usepackage{pgfgantt}
 \usepackage{xcolor}
 \usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx} 
 \usepackage[backend=bibtex, style=numeric]{biblatex}
+\usepackage[english]{babel}
 \addbibresource{references.bib} 
 \geometry{a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm}
-\setmainfont{Times New Roman}
+\setmainfont{Times New Roman}[Ligatures=TeX]
 \onehalfspacing
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
@@ -80,15 +83,32 @@ This method can make the car run in the rainy and cloudy days.
 \\
 This design aims to address the increasing transportation demand while minimizing environmental impacts. 
 By utilizing solar energy, the SunRay Race Car provides a reliable, eco-friendly solution that meets both current and future transportation needs
-
 \section{Problem Formulation}
+The design goal is to develop a prototype that uses solar energy as its main power, 
+optimizes instantaneous energy utilization, achieves maximum speed over the shortest distance, 
+achieves high energy efficiency, and adapts to all kinds of weather. 
+The car requires a range of 10 meters, an efficient energy management system, and fast start and acceleration. 
 % Placeholder for content
+\subsection{Requisite Knowledge}
+To complete the solar car project, in theoretical design part, we need to understand the knowledge of \textbf{capacitors, solar panels and circuits}, 
+including the energy storage and discharge characteristics of capacitors under different load conditions, 
+and design efficient circuits to achieve optimal energy transfer. In practical design part, we need to obtain the knowledge of \textbf{CAD, Laser cutting, and 3D printing}. 
+\\
+\\
+The basic knowledge of capacitor is available, but the discharge rate in the actual circuit requires a further testing. 
+At the same time, it is also vital to select and optimize the Angle and position of efficient solar panels to adapt 
+to varying lighting conditions and ensure energy storage and management in bad weather. While there is a basic understanding of solar panels, 
+it is necessary to further optimize their placement and integration. The CAD, laser cutting, and 3D printing knowledge are also necessary to manufacture the car.
+We have a basic understanding of these technologies, and we will have some further practicing on the specific requirements and constraints of the project. 
+
 \section{Conceptual Design}
-% Placeholder for content
+\subsection{System Overview}
+    
 \section{Design Evaluation}
 % Placeholder for content
 
 \section{Project Planning}
+
 \subsection{Gantt Chart}
 Here is the Gantt Chart of our project planning to help you understand our project planing better. 
 \begin{figure}[h] 
@@ -122,7 +142,6 @@ Here is the Gantt Chart of our project planning to help you understand our proje
     \caption{Roles and Responsibilities in Solar-Powered Car Project}
 \end{table}
 \subsection{Previous Work}
-
 In the first six weeks, we completed three theoretical parts: Team Building, Problem Statement, and Concept Generation. In Week 1, team members got to know each other and held the first group meeting, where everyone presented their understanding of the problem statement. In Week 3, the problem statement facilitated more productive group discussions, as the outcomes were more comprehensive and feasible than individual solutions. By Week 5, the team delivered a presentation on concept generation, exploring various materials, power sources, and transmission methods to optimize performance by balancing efficiency, cost, and weight.
 \subsection{prototype modeling}
 Using a well-equipped car for simple tests was impractical, so we started with temporary substitutes. The body and bottom plate were made of cardboard, with a motor, solar panels, and wheels installed. While the car ran successfully, its speed was unsatisfactory. Additional materials were acquired, and further testing led to design optimizations to reduce weight and improve speed.
@@ -132,10 +151,12 @@ Using a well-equipped car for simple tests was impractical, so we started with t
     \caption{Tested Car prototype}
 \end{figure}
 \subsection{Project installation}
+\label{sec:installation}
 To install the car, we have decided the components that may be used in our solar panel car.
 Such as the solar panel, DC Motor, wheels, base, the shell, gears, transmission shaft and some wires to transfer electric energy. 
 Careful selection and placement of components, such as the solar panel, motor, wheels, and transmission system, is important to ensure a balanced and smooth-running car\cite{Hapuwatte2017}. 
 \subsection{Speed and Appearance optimization}
+\label{sec:Optimization}  
 To achieve high speed, we focused on reducing weight and minimizing components. After building the first version, we removed or replaced parts to make it lighter and faster. 
 Friction within the power system, including the gearbox and transmission shaft, was minimized. 
 On cloudy days, capacitors will power the car, requiring resistor optimization. 
@@ -144,56 +165,41 @@ We will also test and adjust the gear ratio to maximize speed. Additionally, the
 \subsection{Project Final Test}
 In the final test, we aim to have a high speed within competitors. Under the full support of previous test and optimization, we believe our car will have a high speed.
 \subsection{Risk Management}
-The main risk are shortage of makerspace resource(equipment and material) and installation detail, which could delay the project.
-Both risks are mainly affect to the "Project installation" part. To mitigate this risk, we will have a buffer week between the "Project installation" and "Speed and Appearance optimization". 
-This week will be used to address the problems and unexpected detail that may occur in the "Project installation" part. 
+The main risk are \textbf{shortage of makerspace resource(equipment and material), unexpected installation detail and weather condition during optimization}, which could delay the project.
+To mitigate the first two risks, we will have a buffer week between the \textit{\hyperref[sec:installation]{Project Installation}} and \textit{\hyperref[sec:Optimization]{Speed and Appearance optimization}}. 
+This week will be used to address the problems and unexpected detail that may occur in the "Project installation" part. Buffer week can also partly address the last risk, which is the weather condition during testing and optimization.
+However,we will also have a back up solution, which is to simulate solar panels using batteries with variable voltage and current during test and optimization period.
+
 \subsection{Budget}
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|>{\raggedright\arraybackslash}p{6cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{3cm}|>{\centering\arraybackslash}p{3cm}|}
-        \hline
-        \textbf{Item} & \textbf{Quantity} & \textbf{Unit Price (\$)} & \textbf{Total Price (\$)} \\ 
-        \hline
-        Wheels (40mm) & 4 & 1.40 & 1.40 \\ 
-        \hline
-        Motor F 18 & 1 & 2.20 & 2.20 \\ 
-        \hline
-        Toggle switch (two-way, blue) & 1 & 3.00 & 3.00 \\ 
-        \hline
-        Pinion Gear (10 Tooth) & 1 & 0.30 & 0.30 \\ 
-        \hline
-        Pinion Gear (12 Tooth) & 1 & 0.30 & 0.30 \\ 
-        \hline
-        Super Gear (36 Tooth) & 3 & 1.65 & 1.65 \\ 
-        \hline
-        Super Gear (48 Tooth) & 2 & 1.10 & 1.10 \\ 
-        \hline
-        Super Gear (54 Tooth) & 2 & 1.10 & 1.10 \\ 
-        \hline
-        Super Gear (60 Tooth) & 1 & 0.55 & 0.55 \\ 
-        \hline
-        Spur Gear (48/12 Tooth) & 1 & 0.60 & 0.60 \\ 
-        \hline
-        Motor Mount (3D printed - Basic) & 1 & 1.00 & 1.00 \\ 
-        \hline
-        Solar Panel (2V) & 1 & 8.50 & 8.50 \\ 
-        \hline
-        Ply Wood (for Laser cutter) & 1 & 5.00 & 5.00 \\ 
-        \hline
-        Capacitor & 1 & 3.65 & 3.65 \\ 
-        \hline
-        Axle Collar/Bush & 1 & 0.14 & 0.14 \\ 
-        \hline
-        F/Glass Axle (3mm x 167mm) & 1 & 0.45 & 0.45 \\ 
-        \hline
-        F/Glass Axle (3mm x 177mm) & 1 & 0.50 & 0.50 \\ 
-        \hline
-        Other (Double-sided tape, glue, bolts, washers, wire, etc.) & - & 4.00 & 4.00 \\ 
-        \hline
-        \textbf{Sum} & & & \textbf{35.44} \\ 
-        \hline
-    \end{tabular}
-    \caption{Bill of Materials for Solar-Powered Car}
+\begin{table}[h] 
+\centering 
+\begin{tabularx}{\textwidth}{Xrr}
+\toprule
+Parts & Total Qty & Total \$ \\
+\midrule
+wheels - 40mm & 4.0 & 1.40 \\
+Motor F18 & 1.0 & 2.20 \\
+Toggle switch two way blue & 1.0 & 3.00 \\
+Pinion Gear 10Tooth & 2.0 & 0.60 \\
+Pinion Gear 12Tooth & 2.0 & 0.60 \\
+Spur Gear 36 Tooth & 5.0 & 2.75 \\
+Spur Gear48Tooth & 4.0 & 2.20 \\
+Spur Gear54Tooth & 4.0 & 2.20 \\
+Spur Gear60Tooth & 3.0 & 1.65 \\
+Spur Gear 48/12 Tooth & 1.0 & 0.60 \\
+Motor Mount 3D printed - Basic & 1.0 & 1.00 \\
+Motor Mount 3D printed - F13 \& F18 & 1.0 & 1.00 \\
+Solar panel 2v & 2.0 & 17.00 \\
+Corflute 400 x 400 & 1.0 & 4.00 \\
+Capacitor & 2.0 & 7.30 \\
+Axle Collar/bush & 5.0 & 0.70 \\
+F/Glass Axle 3mm x 167mm long & 2.0 & 0.90 \\
+Other - Double sided tape, glue, bolts and washers & 1.0 & 4.00 \\
+\midrule
+Total & 45.0 & 52.70 \\
+\bottomrule
+\end{tabularx}
+\caption{Budget Breakdown for Parts}  % Add your caption here
 \end{table}
 \section{Summary and Conclusion}
 
