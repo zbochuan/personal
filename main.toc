@@ -1,19 +1,24 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}Problem Formulation}{2}{section.2}%
-\contentsline {section}{\numberline {3}Requisite Knowledge}{2}{section.3}%
-\contentsline {section}{\numberline {4}Conceptual Design}{3}{section.4}%
-\contentsline {subsection}{\numberline {4.1}System Overview}{3}{subsection.4.1}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Problem Formulation}{1}{section.2}%
+\contentsline {section}{\numberline {3}Requisite Knowledge}{1}{section.3}%
+\contentsline {section}{\numberline {4}Conceptual Design}{2}{section.4}%
+\contentsline {subsection}{\numberline {4.1}System Overview}{2}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Design Evaluation}{3}{section.5}%
-\contentsline {section}{\numberline {6}Project Planning}{3}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Gantt Chart}{3}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Previous Work}{4}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}prototype modeling}{4}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Project installation}{4}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Speed and Appearance optimization}{5}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Project Final Test}{5}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Risk Management}{5}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}Budget}{5}{subsection.6.8}%
-\contentsline {section}{\numberline {7}Summary and Conclusion}{6}{section.7}%
-\contentsline {section}{References}{7}{section.7}%
-\contentsline {section}{\numberline {A}Appendix}{8}{appendix.A}%
+\contentsline {subsection}{\numberline {5.1}Circuit Design}{3}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Material Selection}{4}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Transmission System}{4}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Appearance}{4}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Solution overview}{5}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Project Planning}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Gantt Chart}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Previous Work}{7}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}prototype modeling}{7}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Project installation}{7}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Speed and Appearance optimization}{7}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Project Final Test}{7}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Risk Management}{7}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Budget}{8}{subsection.6.8}%
+\contentsline {section}{\numberline {7}Conclusion}{9}{section.7}%
+\contentsline {section}{References}{10}{section.7}%
+\contentsline {section}{\numberline {8}Appendix}{1}{section.8}%

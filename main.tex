@@ -14,16 +14,19 @@
 \usepackage{tabularx} 
 \usepackage[backend=bibtex, style=numeric]{biblatex}
 \usepackage[english]{babel}
+\usepackage{colortbl}
 \addbibresource{references.bib} 
 \geometry{a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm}
 \setmainfont{Times New Roman}
+\definecolor{highlight}{RGB}{173, 216, 230}  % 浅蓝色
+
 \onehalfspacing
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
 
 \begin{document}
-
+\pagenumbering{roman}
 \begin{titlepage}
     \centering
     \vspace{1cm}
@@ -53,11 +56,10 @@
 \newpage
 
 \section*{Abstract}
-This document presents the design proposal for Team 16, focusing on the SunRay Speedway. The proposal outlines two design concepts and provides a detailed analysis of the advantages and disadvantages of each. The document concludes with a recommendation for the most promising design concept based on the evaluation criteria.
-
+will be finished in Oct 14 night.
 \tableofcontents
 \newpage
-
+\pagenumbering{arabic}
 \section{Introduction}
 Transportation is a crucial part of modern society. 
 However, current personal transportation is based on petrol, which is not sustainable. 
@@ -102,11 +104,124 @@ We have a basic understanding of these technologies, and we will have some furth
 
 \section{Conceptual Design}
 \subsection{System Overview}
-We explored various solutions to achieve our project goal, 
-guided by the parameters outlined in the problem formulation: "PARAMETER 1", "PARAMETER 2", and "PARAMETER 3." 
+We explored various solutions to achieve our project goal, guided by the function tree ~\ref{pic:function tree}, 
+mainly focusing on the power system, transmission system, and material selection.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|>{\bfseries}l|c|c|c|c|}
+\hline
+\textbf{Functions/Attributes} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} & \textbf{Option 4} \\
+\hline
+Motors & One & Two & Capacitor & Capacitors *2 \\
+\hline
+Power Source & Solar Panel *1 & Solar Panel *2 & Capacitor *1 & Capacitors *2 \\
+\hline
+Material & Plastic & Carbon Fiber & Aluminum & Wood \\
+\hline
+Transmission Type & Direct Drive & Gearbox & Belt Drive & Belt Drive \\
+\hline
+Appearance & No shell & Box-shaped & Curved-shape & Chassis\\
+\hline
+\end{tabular}
+\caption{morph chart of the components}
+\end{table}
+\newline
+As for \textbf{Motor}, We will explore how the number of motors impacts the car’s overall efficiency. 
+While a single motor may simplify design, two motors might enhance performance. 
+However, we must evaluate if adding a second motor introduces complexities, 
+such as more difficult installation or coordination challenges between motors.
+\newline
+\newline
+As for \textbf{Material}, We evaluated 4 material options: plastic, carbon fiber, aluminum and plywood. 
+Plastic(PLA) is easy to process and cost-effective. 
+Carbon fiber and aluminum provide strong structural support. 
+Rubber is ideal for wheels, while wood, like plastic, is easy to process using laser cutting.
+\newline
+\newline
+As for \textbf{Power Source},We considered two power sources: solar panels and capacitors. 
+Solar panels serve as the primary power source, while capacitors offer support under specific conditions, 
+such as on cloudy days.
+\newline
+\newline
+As for \textbf{Transmission Type}, Three transmission types were considered: Direct Drive, Gearbox, and Belt Drive. Direct Drive is the simplest,
+requiring only basic physics knowledge. Gearbox offers high power efficiency and stability, 
+while Belt Drive ensures car stability on straight paths.
+\newline
+\newline
+As for \textbf{Appearance}, 4 appearance options were considered: No shell, Box-shaped, Curved-shape, and Chassis.
+No shell is the simple , and it is easy to install. However, it may not market-friendly.
+And the box-shelped is the most common design, which is also easy to install. However, it doesn't follow aerodynamic principles.
+Curved shape is the most aerodynamic design, which can reduce the air resistance. It's also market-friendly. But it's hard to find a 
+curved solar panels. And it is hard to install. Chassis can siginicantly reduce the weight of the car, and meet our goal of high speed.
+But it's also hard to process the metrial and install.
 \section{Design Evaluation}
-% Placeholder for content
+This section evaluates the design while considering budget constraints and project goals. 
+The morph chart below helps us assess various options based on key attributes.
 
+\begin{table}[h!]
+\centering
+\begin{tabular}{|>{\bfseries}l|c|c|c|c|}
+\hline
+\textbf{Functions/Attributes} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} & \textbf{Option 4} \\
+\hline
+motors & \cellcolor{highlight}\textbf{One} & Two &  &  \\
+\hline
+Power Source & Solar Panel *1 & \cellcolor{highlight}\textbf{Solar Panel *2} & Capacitor *1 &\cellcolor{highlight}Capacitors *2 \\
+\hline
+Material & \cellcolor{highlight}\textbf{Plastic} & Carbon Fiber & Aluminum & Wood \\
+\hline
+Transmission Type & Direct Drive & \cellcolor{highlight}\textbf{Gearbox} & Belt Drive &  \\
+\hline
+Appearance & No shell & \cellcolor{highlight}\textbf{Box-shaped} & \cellcolor{highlight}\textbf{Curved-shape} & Chassis\\
+\hline
+
+\end{tabular}
+\caption{Comparison of Options for Car Design with Highlighted Selections}
+\end{table}
+\subsection{Circuit Design}
+After our group communiction, our design incorporates both solar panels and capacitors. 
+No single solution addresses all conditions, so we will use two capacitors and two solar panels.
+In order to ensure the car runs smoothly in cloudy days, 2 capacitors will be installed, evaluated weight and energy efficiency.
+Here is the circuit design of our solar-powered car.
+\begin{figure}[h] 
+    \centering 
+    \includegraphics[width=1\textwidth]{figure/circute_design.jpeg} 
+    \caption{Circuit Design} 
+\end{figure}
+\subsection{Material Selection}
+After our group evaluation meeting, plastic and plywood were selected for their affordability and ease of processing.
+Plastic allows for precision using 3D printing and CAD designs, 
+while wood provides an affordable alternative for certain parts. 
+Carbon fiber was excluded due to its high cost and processing fees.
+\subsection{Transmission System}
+By merging all the ideas and primary test, we have decided to use Gearbox as the transmission system.
+Direct Drive was found inefficient due to motor limitations.
+The Gearbox offers better power efficiency but is harder to design. 
+Belt Drive is also effective but requires redesigning the entire power system, 
+which complicates motor usage. Therefore, Gearbox will be the primary choice, with Belt Drive as a fallback if Gearbox fails.
+Here is our gearbox and motor design.
+\begin{figure}[h] 
+    \centering 
+    \includegraphics[width=1\textwidth]{figure/gearbox_design.png} 
+    \caption{motor and gearbox design} 
+\end{figure}
+\subsection{Appearance}
+After our group evaluation meeting, we have decided merge curved shape and box shape as the appearance of our solar-powered car.
+The curved shape can reduce the air resistance and make the car more marketable. And at the middle of the car, we will use the box shape to make 
+it eaiser to install the motor and gearbox. At the top, solar panel will be the roof of the car. Such design also make it lighter and faster.
+Here is our appearance design.
+\begin{figure}[h] 
+    \centering 
+    \includegraphics[width=1\textwidth]{figure/appearence.png} 
+    \caption{motor and gearbox design} 
+\end{figure}
+\subsection{Solution overview}
+Our solar car’s first version will have a plastic front-side, wood base and wood side. 
+Both solar panels and capacitors will be integrated. 
+Weight considerations will be secondary to getting the car running as quickly as possible. 
+A single motor and Gearbox system will power the car.
+
+\newpage
 \section{Project Planning}
 
 \subsection{Gantt Chart}
@@ -216,26 +331,30 @@ Total & 45.0 & 52.70 \\
 \end{tabularx}
 \caption{Budget Breakdown for Parts}
 \end{table}
-\section{Summary and Conclusion}
-fhdsajfhaksf
-fhdjskahfjsakdf
-\\
-fdjsklfasdkhfjlf
-fhdsjkaflsf\\
+\section{Conclusion}
+(about half to one page)
+Will be finished in Oct 14 night.
+
 \newpage
 \addcontentsline{toc}{section}{References}
 \printbibliography
 
 \newpage
-\appendix
 \section{Appendix}
+\pagenumbering{arabic}  
+\setcounter{page}{1}
 This appendix contains supplementary materials such as detailed calculations, additional diagrams, or extended descriptions related to the project.
-
 \begin{figure}[h] 
     \centering 
     \includegraphics[width=0.8\textwidth]{figure/car_prototype.jpg} 
-    \caption{Additional Diagram for the Project}
+    \caption{Prototype Car}
     \label{pic:prototype_car}
+\end{figure}
+\begin{figure}[h] 
+    \centering 
+    \includegraphics[width=0.8\textwidth]{figure/function_tree.jpg} 
+    \caption{Function tree}
+    \label{pic:function tree}
 \end{figure}
 \end{document}
 

@@ -33,10 +33,9 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-  \field{howpublished}{\url{https://www.bitre.gov.au/publications/2023/australian-infrastructure-and-transport-statistics-yearbook-2023/transport-energy-environment}}
+    \field{howpublished}{\url{https://www.bitre.gov.au/publications/2023/australian-infrastructure-and-transport-statistics-yearbook-2023/transport-energy-environment}}
     \field{note}{Viewed 6 October 2024}
-    \field{title}{Australian Infrastructure and Transport Statistics Yearbook
-  2023: Transport Energy Environment}
+    \field{title}{Australian Infrastructure and Transport Statistics Yearbook 2023: Transport Energy Environment}
     \field{year}{2023}
   \endentry
 
@@ -102,8 +101,7 @@
     \endverb
     \field{pages}{801\bibrangedash 811}
     \field{series}{Smart Innovation, Systems and Technologies}
-    \field{title}{Metrics-based Integrated Predictive Performance Models for
-  Optimized Sustainable Product Design}
+    \field{title}{Metrics-based Integrated Predictive Performance Models for Optimized Sustainable Product Design}
     \verb{url}
     \verb https://doi.org/10.1007/978-3-319-57078-5_79
     \endverb
